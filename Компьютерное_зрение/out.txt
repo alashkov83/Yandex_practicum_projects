@@ -1,0 +1,77 @@
+ 2023-02-20 15:36:23.115334: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libnvinfer.so.6
+2023-02-20 15:36:23.331347: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libnvinfer_plugin.so.6
+2023-02-20 15:36:27.733006: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2023-02-20 15:36:28.414349: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 0 with properties: 
+pciBusID: 0000:8b:00.0 name: Tesla V100-SXM2-32GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 31.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2023-02-20 15:36:28.414434: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2023-02-20 15:36:28.414465: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2023-02-20 15:36:28.487485: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2023-02-20 15:36:28.514683: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2023-02-20 15:36:28.840493: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2023-02-20 15:36:28.878744: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2023-02-20 15:36:28.878870: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2023-02-20 15:36:28.883412: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1697] Adding visible gpu devices: 0
+Using TensorFlow backend.
+Found 5694 validated image filenames.
+Found 1897 validated image filenames.
+2023-02-20 15:36:29.326082: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2023-02-20 15:36:29.355773: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2099995000 Hz
+2023-02-20 15:36:29.357491: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x50c7cb0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2023-02-20 15:36:29.357521: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2023-02-20 15:36:29.543240: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x4727fd0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2023-02-20 15:36:29.543278: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla V100-SXM2-32GB, Compute Capability 7.0
+2023-02-20 15:36:29.545725: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 0 with properties: 
+pciBusID: 0000:8b:00.0 name: Tesla V100-SXM2-32GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 31.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2023-02-20 15:36:29.545789: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2023-02-20 15:36:29.545799: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2023-02-20 15:36:29.545828: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2023-02-20 15:36:29.545857: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2023-02-20 15:36:29.545868: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2023-02-20 15:36:29.545877: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2023-02-20 15:36:29.545884: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2023-02-20 15:36:29.550347: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1697] Adding visible gpu devices: 0
+2023-02-20 15:36:29.552080: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2023-02-20 15:36:32.923900: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1096] Device interconnect StreamExecutor with strength 1 edge matrix:
+2023-02-20 15:36:32.923948: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102]      0 
+2023-02-20 15:36:32.923957: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] 0:   N 
+2023-02-20 15:36:32.928531: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2023-02-20 15:36:32.928589: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1241] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10240 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-32GB, pci bus id: 0000:8b:00.0, compute capability: 7.0)
+<class 'tensorflow.python.keras.engine.sequential.Sequential'>
+WARNING:tensorflow:sample_weight modes were coerced from
+  ...
+    to  
+  ['...']
+WARNING:tensorflow:sample_weight modes were coerced from
+  ...
+    to  
+  ['...']
+Train for 178 steps, validate for 60 steps
+Epoch 1/10
+2023-02-20 15:36:56.922114: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2023-02-20 15:36:59.174097: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+178/178 - 66s - loss: 226.9715 - mae: 10.6264 - val_loss: 703.9649 - val_mae: 21.5796
+Epoch 2/10
+178/178 - 37s - loss: 71.5740 - mae: 6.3426 - val_loss: 565.9237 - val_mae: 18.5592
+Epoch 3/10
+178/178 - 37s - loss: 50.5630 - mae: 5.3756 - val_loss: 285.4064 - val_mae: 12.8129
+Epoch 4/10
+178/178 - 37s - loss: 32.8096 - mae: 4.3770 - val_loss: 129.2512 - val_mae: 8.5348
+Epoch 5/10
+178/178 - 38s - loss: 25.2096 - mae: 3.8073 - val_loss: 78.8285 - val_mae: 6.7084
+Epoch 6/10
+178/178 - 37s - loss: 20.4972 - mae: 3.4455 - val_loss: 78.3543 - val_mae: 6.7095
+Epoch 7/10
+178/178 - 39s - loss: 14.8088 - mae: 2.9476 - val_loss: 66.7951 - val_mae: 6.2104
+Epoch 8/10
+178/178 - 40s - loss: 12.4063 - mae: 2.6892 - val_loss: 69.7973 - val_mae: 6.3071
+Epoch 9/10
+178/178 - 40s - loss: 11.2066 - mae: 2.5252 - val_loss: 64.7032 - val_mae: 6.0296
+Epoch 10/10
+178/178 - 39s - loss: 9.4765 - mae: 2.3138 - val_loss: 63.0489 - val_mae: 6.0010
+WARNING:tensorflow:sample_weight modes were coerced from
+  ...
+    to  
+  ['...']
+60/60 - 9s
